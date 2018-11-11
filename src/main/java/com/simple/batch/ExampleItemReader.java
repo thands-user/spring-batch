@@ -9,11 +9,11 @@ import org.springframework.stereotype.Component;
 
 @Component("reader")
 public class ExampleItemReader implements ItemReader<String> {
-	
-	private String[] input = {"Hello world!", null};
-	
+
+	private String[] input = {"Hello world!", "Hello world !!", "hello world"};
+
 	private int index = 0;
-	
+
 	/**
 	 * Reads next record from input
 	 */
@@ -24,7 +24,7 @@ public class ExampleItemReader implements ItemReader<String> {
 		else {
 			return null;
 		}
-		
+
 	}
 
 }
